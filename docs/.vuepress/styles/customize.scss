@@ -13,6 +13,30 @@ html.dark {
     }
   }
 }
+
+@mixin scrollbar-style($w:0, $h:0, $bg: transparent, $slider: transparent) {
+  &::-webkit-scrollbar {
+    width: $w;
+    height: $h;
+  }
+
+  // 背景
+  &::-webkit-scrollbar-track {
+    background-color: $bg;
+  }
+
+  // 滑块
+  &::-webkit-scrollbar-thumb {
+    @apply rounded-sm;
+    background-color: $slider;
+  }
+}
+
+input:focus {
+  outline: none;
+}
+
+
 .CustomizeHomeFeatures {
   display: grid !important;
 	grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
@@ -290,4 +314,16 @@ html.dark {
       }
     }
   }
+}
+
+/* 404 页面样式 */
+.Customize-error {
+  width: 100vw;
+  height: 100vh;
+}
+
+html {
+  overflow: hidden;
+  overflow-y: overlay;
+  @include scrollbar-style($w: 5px,$slider: #c5c5c5);
 }
