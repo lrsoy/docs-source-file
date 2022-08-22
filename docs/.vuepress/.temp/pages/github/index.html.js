@@ -1,0 +1,1 @@
+export const data = JSON.parse("{\"key\":\"v-6c67d393\",\"path\":\"/github/\",\"title\":\"Github Actions 与 Github Pages\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"excerpt\":\"\",\"headers\":[],\"git\":{\"updatedTime\":null,\"contributors\":[]},\"filePathRelative\":\"github/index.md\"}")

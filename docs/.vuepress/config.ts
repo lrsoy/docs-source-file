@@ -28,6 +28,10 @@ export default defineUserConfig({
         text: '其他',
         link: "/other/index.md"
       },
+      {
+        text: 'Github Actions',
+        link: "/github/index.md"
+      },
       // my github
       {
         text: 'Github',
