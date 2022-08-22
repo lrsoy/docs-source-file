@@ -1,0 +1,25 @@
+@import './customize.scss';
+:root {
+  // 首页按钮相关的css 变量 （亮色）
+  --background: #1E2235;
+  --color: #F6F8FF;
+  --shadow: #{rgba(#00093D, .24)};
+  --cannon-dark: #A6ACCD;
+  --cannon-light: #F6F8FF;
+  --cannon-shadow: #{rgba(#0D0F18, .9)};
+
+  // 首页卡片背景色
+  --home-card-bg: #ffffff;
+  --home-card-shadow:  rgb(0 0 0 / 15%);
+}
+html.dark {
+  // 首页按钮相关的css 变量 （暗色）
+  --background: #404660;
+  --cannon-shadow: #{rgba(#0D0F18, .2)};
+  --cannon-dark: #D1D6EE;
+  --cannon-light: #FFFFFF;
+
+  // 首页卡片背景色
+  --home-card-bg: #22272e;
+  --home-card-shadow:  rgb(0 0 0 / 30%);
+}
