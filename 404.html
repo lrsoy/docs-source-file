@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="VuePress 2.0.0-beta.49">
+    <style>
+      :root {
+        --c-bg: #fff;
+      }
+      html.dark {
+        --c-bg: #22272e;
+      }
+      html, body {
+        background-color: var(--c-bg);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem('vuepress-color-scheme');
+			const systemDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+			if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
+				document.documentElement.classList.toggle('dark', true);
+			}
+    </script>
+    <title>Lrsoy</title><meta name="description" content="这是我的第一个 VuePress 站点">
+    <link rel="modulepreload" href="/assets/app.6eca692a.js"><link rel="modulepreload" href="/assets/404.html.f1fb26ce.js"><link rel="modulepreload" href="/assets/404.html.265028f6.js"><link rel="prefetch" href="/assets/index.html.8f2b3d08.js"><link rel="prefetch" href="/assets/index.html.f84a3ef8.js"><link rel="prefetch" href="/assets/index.html.201c4856.js"><link rel="prefetch" href="/assets/index.html.7e8b4d74.js"><link rel="prefetch" href="/assets/index.html.b0473e4d.js"><link rel="prefetch" href="/assets/index.html.c3a06206.js"><link rel="prefetch" href="/assets/index.html.188666c8.js"><link rel="prefetch" href="/assets/index.html.ce6f7e92.js"><link rel="prefetch" href="/assets/index.html.8991309a.js"><link rel="prefetch" href="/assets/index.html.853fe484.js"><link rel="prefetch" href="/assets/404.742ef71a.js"><link rel="prefetch" href="/assets/Layout.1ff04adf.js">
+    <link rel="stylesheet" href="/assets/style.7b40a802.css">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="Customize-error">创建组件</div><!----><!--]--></div>
+    <script type="module" src="/assets/app.6eca692a.js" defer></script>
+  </body>
+</html>
