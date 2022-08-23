@@ -2,10 +2,19 @@ import {
   isArray,
   isFunction,
   isString
-} from "./chunk-AVTOPKID.js";
-import "./chunk-FEFTYQ2P.js";
+} from "./chunk-MFV3HFIN.js";
+import {
+  init_buffer,
+  init_virtual_process_polyfill
+} from "./chunk-OJBEK6BK.js";
+
+// dep:@vuepress_shared
+init_virtual_process_polyfill();
+init_buffer();
 
 // node_modules/@vuepress/shared/dist/index.js
+init_virtual_process_polyfill();
+init_buffer();
 var resolveHeadIdentifier = ([
   tag,
   attrs,

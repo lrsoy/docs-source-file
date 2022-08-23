@@ -26,11 +26,28 @@ import {
   unref,
   watch,
   watchEffect
-} from "./chunk-TVEHGJEI.js";
-import "./chunk-AVTOPKID.js";
-import "./chunk-FEFTYQ2P.js";
+} from "./chunk-2WJZ6ZNA.js";
+import "./chunk-MFV3HFIN.js";
+import {
+  init_buffer,
+  init_virtual_process_polyfill
+} from "./chunk-OJBEK6BK.js";
+
+// dep:@vueuse_core
+init_virtual_process_polyfill();
+init_buffer();
+
+// node_modules/@vueuse/core/index.mjs
+init_virtual_process_polyfill();
+init_buffer();
+
+// node_modules/@vueuse/shared/index.mjs
+init_virtual_process_polyfill();
+init_buffer();
 
 // node_modules/vue-demi/lib/index.mjs
+init_virtual_process_polyfill();
+init_buffer();
 var isVue2 = false;
 var isVue3 = true;
 function set(target, key, val) {
@@ -2283,7 +2300,7 @@ function useClipboard(options = {}) {
     copy
   };
 }
-var _global = typeof globalThis !== "undefined" ? globalThis : typeof window !== "undefined" ? window : typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : {};
+var _global = typeof globalThis !== "undefined" ? globalThis : typeof window !== "undefined" ? window : typeof globalThis !== "undefined" ? globalThis : typeof self !== "undefined" ? self : {};
 var globalKey = "__vueuse_ssr_handlers__";
 _global[globalKey] = _global[globalKey] || {};
 var handlers = _global[globalKey];

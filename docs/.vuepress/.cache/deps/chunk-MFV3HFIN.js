@@ -1,4 +1,11 @@
+import {
+  init_buffer,
+  init_virtual_process_polyfill
+} from "./chunk-OJBEK6BK.js";
+
 // node_modules/@vue/shared/dist/shared.esm-bundler.js
+init_virtual_process_polyfill();
+init_buffer();
 function makeMap(str, expectsLowerCase) {
   const map = /* @__PURE__ */ Object.create(null);
   const list = str.split(",");
@@ -233,7 +240,7 @@ var toNumber = (val) => {
 };
 var _globalThis;
 var getGlobalThis = () => {
-  return _globalThis || (_globalThis = typeof globalThis !== "undefined" ? globalThis : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : typeof global !== "undefined" ? global : {});
+  return _globalThis || (_globalThis = typeof globalThis !== "undefined" ? globalThis : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : typeof globalThis !== "undefined" ? globalThis : {});
 };
 
 export {
@@ -281,4 +288,4 @@ export {
   toNumber,
   getGlobalThis
 };
-//# sourceMappingURL=chunk-AVTOPKID.js.map
+//# sourceMappingURL=chunk-MFV3HFIN.js.map

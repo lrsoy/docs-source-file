@@ -1,6 +1,8 @@
 export const pagesData = {
   // path: /
   "v-8daa1a0e": () => import(/* webpackChunkName: "v-8daa1a0e" */"F:/study-notes/docs/.vuepress/.temp/pages/index.html.js").then(({ data }) => data),
+  // path: /featured/a.html
+  "v-360f0400": () => import(/* webpackChunkName: "v-360f0400" */"F:/study-notes/docs/.vuepress/.temp/pages/featured/a.html.js").then(({ data }) => data),
   // path: /github/
   "v-6c67d393": () => import(/* webpackChunkName: "v-6c67d393" */"F:/study-notes/docs/.vuepress/.temp/pages/github/index.html.js").then(({ data }) => data),
   // path: /guide/

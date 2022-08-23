@@ -40,9 +40,15 @@ import {
   toHandlerKey,
   toNumber,
   toRawType
-} from "./chunk-AVTOPKID.js";
+} from "./chunk-MFV3HFIN.js";
+import {
+  init_buffer,
+  init_virtual_process_polyfill
+} from "./chunk-OJBEK6BK.js";
 
 // node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js
+init_virtual_process_polyfill();
+init_buffer();
 function warn(msg, ...args) {
   console.warn(`[Vue warn] ${msg}`, ...args);
 }
@@ -1046,6 +1052,8 @@ var tick = Promise.resolve();
 _a = "__v_isReadonly";
 
 // node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js
+init_virtual_process_polyfill();
+init_buffer();
 var stack = [];
 function pushWarningContext(vnode) {
   stack.push(vnode);
@@ -1638,7 +1646,7 @@ function normalizeEmitsOptions(comp, appContext, asMixin = false) {
   const raw = comp.emits;
   let normalized = {};
   let hasExtends = false;
-  if (!isFunction(comp)) {
+  if (__VUE_OPTIONS_API__ && !isFunction(comp)) {
     const extendEmits = (raw2) => {
       const normalizedFromExtend = normalizeEmitsOptions(raw2, appContext, true);
       if (normalizedFromExtend) {
@@ -3417,10 +3425,10 @@ var publicPropertiesMap = extend(/* @__PURE__ */ Object.create(null), {
   $parent: (i) => getPublicInstance(i.parent),
   $root: (i) => getPublicInstance(i.root),
   $emit: (i) => i.emit,
-  $options: (i) => true ? resolveMergedOptions(i) : i.type,
+  $options: (i) => __VUE_OPTIONS_API__ ? resolveMergedOptions(i) : i.type,
   $forceUpdate: (i) => i.f || (i.f = () => queueJob(i.update)),
   $nextTick: (i) => i.n || (i.n = nextTick.bind(i.proxy)),
-  $watch: (i) => true ? instanceWatch.bind(i) : NOOP
+  $watch: (i) => __VUE_OPTIONS_API__ ? instanceWatch.bind(i) : NOOP
 });
 var isReservedPrefix = (key) => key === "_" || key === "$";
 var PublicInstanceProxyHandlers = {
@@ -3458,7 +3466,7 @@ var PublicInstanceProxyHandlers = {
       } else if (ctx !== EMPTY_OBJ && hasOwn(ctx, key)) {
         accessCache[key] = 4;
         return ctx[key];
-      } else if (shouldCacheAccess) {
+      } else if (!__VUE_OPTIONS_API__ || shouldCacheAccess) {
         accessCache[key] = 0;
       }
     }
@@ -4125,7 +4133,7 @@ function normalizePropsOptions(comp, appContext, asMixin = false) {
   const normalized = {};
   const needCastKeys = [];
   let hasExtends = false;
-  if (!isFunction(comp)) {
+  if (__VUE_OPTIONS_API__ && !isFunction(comp)) {
     const extendProps = (raw2) => {
       hasExtends = true;
       const [props, keys] = normalizePropsOptions(raw2, appContext, true);
@@ -4452,7 +4460,7 @@ function createAppAPI(render2, hydrate2) {
         return app;
       },
       mixin(mixin) {
-        if (true) {
+        if (__VUE_OPTIONS_API__) {
           if (!context.mixins.includes(mixin)) {
             context.mixins.push(mixin);
           } else if (true) {
@@ -4922,11 +4930,11 @@ function isSupported() {
 }
 function initFeatureFlags() {
   const needWarn = [];
-  if (false) {
+  if (typeof __VUE_OPTIONS_API__ !== "boolean") {
     needWarn.push(`__VUE_OPTIONS_API__`);
     getGlobalThis().__VUE_OPTIONS_API__ = true;
   }
-  if (false) {
+  if (typeof __VUE_PROD_DEVTOOLS__ !== "boolean") {
     needWarn.push(`__VUE_PROD_DEVTOOLS__`);
     getGlobalThis().__VUE_PROD_DEVTOOLS__ = false;
   }
@@ -6612,7 +6620,7 @@ function finishComponentSetup(instance, isSSR, skipOptions) {
       installWithProxy(instance);
     }
   }
-  if (true) {
+  if (__VUE_OPTIONS_API__ && true) {
     setCurrentInstance(instance);
     pauseTracking();
     applyOptions(instance);
@@ -7053,6 +7061,8 @@ var resolveFilter = null;
 var compatUtils = null;
 
 // node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js
+init_virtual_process_polyfill();
+init_buffer();
 var svgNS = "http://www.w3.org/2000/svg";
 var doc = typeof document !== "undefined" ? document : null;
 var templateContainer = doc && doc.createElement("template");
@@ -8434,6 +8444,8 @@ var initDirectivesForSSR = () => {
 };
 
 // node_modules/vue/dist/vue.runtime.esm-bundler.js
+init_virtual_process_polyfill();
+init_buffer();
 function initDev() {
   {
     initCustomFormatter();
@@ -8588,4 +8600,4 @@ export {
   initDirectivesForSSR,
   compile2 as compile
 };
-//# sourceMappingURL=chunk-TVEHGJEI.js.map
+//# sourceMappingURL=chunk-2WJZ6ZNA.js.map
