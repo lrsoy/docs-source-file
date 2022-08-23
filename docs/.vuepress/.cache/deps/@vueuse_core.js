@@ -26,9 +26,9 @@ import {
   unref,
   watch,
   watchEffect
-} from "./chunk-TVEHGJEI.js";
-import "./chunk-AVTOPKID.js";
-import "./chunk-FEFTYQ2P.js";
+} from "./chunk-BTS7FNWU.js";
+import "./chunk-54H5P76K.js";
+import "./chunk-2OZUEREY.js";
 
 // node_modules/vue-demi/lib/index.mjs
 var isVue2 = false;
@@ -2283,7 +2283,7 @@ function useClipboard(options = {}) {
     copy
   };
 }
-var _global = typeof globalThis !== "undefined" ? globalThis : typeof window !== "undefined" ? window : typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : {};
+var _global = typeof globalThis !== "undefined" ? globalThis : typeof window !== "undefined" ? window : typeof globalThis !== "undefined" ? globalThis : typeof self !== "undefined" ? self : {};
 var globalKey = "__vueuse_ssr_handlers__";
 _global[globalKey] = _global[globalKey] || {};
 var handlers = _global[globalKey];

@@ -233,7 +233,7 @@ var toNumber = (val) => {
 };
 var _globalThis;
 var getGlobalThis = () => {
-  return _globalThis || (_globalThis = typeof globalThis !== "undefined" ? globalThis : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : typeof global !== "undefined" ? global : {});
+  return _globalThis || (_globalThis = typeof globalThis !== "undefined" ? globalThis : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : typeof globalThis !== "undefined" ? globalThis : {});
 };
 
 export {
@@ -281,4 +281,4 @@ export {
   toNumber,
   getGlobalThis
 };
-//# sourceMappingURL=chunk-AVTOPKID.js.map
+//# sourceMappingURL=chunk-54H5P76K.js.map
