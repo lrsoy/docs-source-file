@@ -19,7 +19,7 @@ import type { DefaultThemeHomePageFrontmatter } from '@vuepress/theme-default/li
 import { useRouter } from 'vue-router'
 const router = useRouter()
 
-import * as matter from 'gray-matter';
+// import * as matter from 'gray-matter';
 
 const frontmatter = usePageFrontmatter<DefaultThemeHomePageFrontmatter>()
 const features = computed(() => {
