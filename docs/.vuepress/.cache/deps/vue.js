@@ -137,7 +137,7 @@ import {
   withMemo,
   withModifiers,
   withScopeId
-} from "./chunk-2WJZ6ZNA.js";
+} from "./chunk-TVEHGJEI.js";
 import {
   camelize,
   capitalize,
@@ -146,15 +146,8 @@ import {
   normalizeStyle,
   toDisplayString,
   toHandlerKey
-} from "./chunk-MFV3HFIN.js";
-import {
-  init_buffer,
-  init_virtual_process_polyfill
-} from "./chunk-OJBEK6BK.js";
-
-// dep:vue
-init_virtual_process_polyfill();
-init_buffer();
+} from "./chunk-AVTOPKID.js";
+import "./chunk-FEFTYQ2P.js";
 export {
   BaseTransition,
   Comment,

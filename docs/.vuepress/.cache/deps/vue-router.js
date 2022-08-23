@@ -1,6 +1,6 @@
 import {
   setupDevtoolsPlugin
-} from "./chunk-CRBGR4JI.js";
+} from "./chunk-TSDGXXND.js";
 import {
   computed,
   defineComponent,
@@ -18,24 +18,11 @@ import {
   unref,
   watch,
   watchEffect
-} from "./chunk-2WJZ6ZNA.js";
-import "./chunk-MFV3HFIN.js";
-import {
-  init_buffer,
-  init_virtual_process_polyfill
-} from "./chunk-OJBEK6BK.js";
-
-// dep:vue-router
-init_virtual_process_polyfill();
-init_buffer();
-
-// node_modules/vue-router/dist/vue-router.esm-bundler.js
-init_virtual_process_polyfill();
-init_buffer();
+} from "./chunk-TVEHGJEI.js";
+import "./chunk-AVTOPKID.js";
+import "./chunk-FEFTYQ2P.js";
 
 // node_modules/vue-router/dist/vue-router.mjs
-init_virtual_process_polyfill();
-init_buffer();
 var isBrowser = typeof window !== "undefined";
 function isESModule(obj) {
   return obj.__esModule || obj[Symbol.toStringTag] === "Module";

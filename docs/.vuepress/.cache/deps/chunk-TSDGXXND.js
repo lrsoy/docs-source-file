@@ -1,11 +1,4 @@
-import {
-  init_buffer,
-  init_virtual_process_polyfill
-} from "./chunk-OJBEK6BK.js";
-
 // node_modules/@vue/devtools-api/lib/esm/time.js
-init_virtual_process_polyfill();
-init_buffer();
 var supported;
 var perf;
 function isPerformanceSupported() {
@@ -16,9 +9,9 @@ function isPerformanceSupported() {
   if (typeof window !== "undefined" && window.performance) {
     supported = true;
     perf = window.performance;
-  } else if (typeof globalThis !== "undefined" && ((_a = globalThis.perf_hooks) === null || _a === void 0 ? void 0 : _a.performance)) {
+  } else if (typeof global !== "undefined" && ((_a = global.perf_hooks) === null || _a === void 0 ? void 0 : _a.performance)) {
     supported = true;
-    perf = globalThis.perf_hooks.performance;
+    perf = global.perf_hooks.performance;
   } else {
     supported = false;
   }
@@ -28,30 +21,20 @@ function now() {
   return isPerformanceSupported() ? perf.now() : Date.now();
 }
 
-// node_modules/@vue/devtools-api/lib/esm/index.js
-init_virtual_process_polyfill();
-init_buffer();
-
 // node_modules/@vue/devtools-api/lib/esm/env.js
-init_virtual_process_polyfill();
-init_buffer();
 function getDevtoolsGlobalHook() {
   return getTarget().__VUE_DEVTOOLS_GLOBAL_HOOK__;
 }
 function getTarget() {
-  return typeof navigator !== "undefined" && typeof window !== "undefined" ? window : typeof globalThis !== "undefined" ? globalThis : {};
+  return typeof navigator !== "undefined" && typeof window !== "undefined" ? window : typeof global !== "undefined" ? global : {};
 }
 var isProxyAvailable = typeof Proxy === "function";
 
 // node_modules/@vue/devtools-api/lib/esm/const.js
-init_virtual_process_polyfill();
-init_buffer();
 var HOOK_SETUP = "devtools-plugin:setup";
 var HOOK_PLUGIN_SETTINGS_SET = "plugin:settings:set";
 
 // node_modules/@vue/devtools-api/lib/esm/proxy.js
-init_virtual_process_polyfill();
-init_buffer();
 var ApiProxy = class {
   constructor(plugin, hook) {
     this.target = null;
@@ -151,38 +134,6 @@ var ApiProxy = class {
   }
 };
 
-// node_modules/@vue/devtools-api/lib/esm/api/index.js
-init_virtual_process_polyfill();
-init_buffer();
-
-// node_modules/@vue/devtools-api/lib/esm/api/api.js
-init_virtual_process_polyfill();
-init_buffer();
-
-// node_modules/@vue/devtools-api/lib/esm/api/app.js
-init_virtual_process_polyfill();
-init_buffer();
-
-// node_modules/@vue/devtools-api/lib/esm/api/component.js
-init_virtual_process_polyfill();
-init_buffer();
-
-// node_modules/@vue/devtools-api/lib/esm/api/context.js
-init_virtual_process_polyfill();
-init_buffer();
-
-// node_modules/@vue/devtools-api/lib/esm/api/hooks.js
-init_virtual_process_polyfill();
-init_buffer();
-
-// node_modules/@vue/devtools-api/lib/esm/api/util.js
-init_virtual_process_polyfill();
-init_buffer();
-
-// node_modules/@vue/devtools-api/lib/esm/plugin.js
-init_virtual_process_polyfill();
-init_buffer();
-
 // node_modules/@vue/devtools-api/lib/esm/index.js
 function setupDevtoolsPlugin(pluginDescriptor, setupFn) {
   const descriptor = pluginDescriptor;
@@ -209,4 +160,4 @@ export {
   now,
   setupDevtoolsPlugin
 };
-//# sourceMappingURL=chunk-CRBGR4JI.js.map
+//# sourceMappingURL=chunk-TSDGXXND.js.map
