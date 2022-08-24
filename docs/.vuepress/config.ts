@@ -8,8 +8,8 @@ export default defineUserConfig({
   lang: 'zh-CN',
   title: 'Lrsoy',
   description: '这是我的第一个 VuePress 站点',
-  base:"/docs-source-file/",
-  theme: localTheme({
+  base: "/docs-source-file/",
+  theme: defaultTheme({
     logo: '/images/logoNavBook.png',
     logoDark: "/images/logoNavBookDark.png",
     navbar: [
