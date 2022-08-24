@@ -137,7 +137,7 @@ import {
   withMemo,
   withModifiers,
   withScopeId
-} from "./chunk-BTS7FNWU.js";
+} from "./chunk-FRZSQPYE.js";
 import {
   camelize,
   capitalize,
@@ -146,8 +146,15 @@ import {
   normalizeStyle,
   toDisplayString,
   toHandlerKey
-} from "./chunk-54H5P76K.js";
-import "./chunk-2OZUEREY.js";
+} from "./chunk-YTZ7G7PT.js";
+import {
+  init_define_EXTERNAL_LINK_ICON_LOCALES,
+  init_define_MZ_ZOOM_OPTIONS
+} from "./chunk-MXMEVKDT.js";
+
+// dep:vue
+init_define_EXTERNAL_LINK_ICON_LOCALES();
+init_define_MZ_ZOOM_OPTIONS();
 export {
   BaseTransition,
   Comment,

@@ -46,23 +46,23 @@ export default defineUserConfig({
     '@theme/HomeFeatures.vue': path.resolve(__dirname, './components/CustomizeHomeFeatures.vue'),
   },
   // 配置 vite 配置文件 ‘ vite.config.ts ’ 中的相关配置
-  bundler: viteBundler({
-    viteOptions: { // vite 的基础配置
-      // ...other config settings
-      optimizeDeps: { // 官方配置错误解决地址 // https://github.com/jonschlinkert/gray-matter/issues/143
-        esbuildOptions: {
-          // Node.js global to browser globalThis
-          define: {
-            global: 'globalThis'
-          },
-          // Enable esbuild polyfill plugins
-          plugins: [
-            NodeGlobalsPolyfillPlugin({
-              buffer: true
-            })
-          ]
-        }
-      }
-    }
-  })
+  // bundler: viteBundler({
+  //   viteOptions: { // vite 的基础配置
+  //     // ...other config settings
+  //     optimizeDeps: { // 官方配置错误解决地址 // https://github.com/jonschlinkert/gray-matter/issues/143
+  //       esbuildOptions: {
+  //         // Node.js global to browser globalThis
+  //         define: {
+  //           global: 'globalThis'
+  //         },
+  //         // Enable esbuild polyfill plugins
+  //         plugins: [
+  //           NodeGlobalsPolyfillPlugin({
+  //             buffer: true
+  //           })
+  //         ]
+  //       }
+  //     }
+  //   }
+  // })
 })

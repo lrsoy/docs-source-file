@@ -1,4 +1,11 @@
+import {
+  init_define_EXTERNAL_LINK_ICON_LOCALES,
+  init_define_MZ_ZOOM_OPTIONS
+} from "./chunk-MXMEVKDT.js";
+
 // node_modules/@vue/devtools-api/lib/esm/time.js
+init_define_EXTERNAL_LINK_ICON_LOCALES();
+init_define_MZ_ZOOM_OPTIONS();
 var supported;
 var perf;
 function isPerformanceSupported() {
@@ -9,9 +16,9 @@ function isPerformanceSupported() {
   if (typeof window !== "undefined" && window.performance) {
     supported = true;
     perf = window.performance;
-  } else if (typeof globalThis !== "undefined" && ((_a = globalThis.perf_hooks) === null || _a === void 0 ? void 0 : _a.performance)) {
+  } else if (typeof global !== "undefined" && ((_a = global.perf_hooks) === null || _a === void 0 ? void 0 : _a.performance)) {
     supported = true;
-    perf = globalThis.perf_hooks.performance;
+    perf = global.perf_hooks.performance;
   } else {
     supported = false;
   }
@@ -21,20 +28,30 @@ function now() {
   return isPerformanceSupported() ? perf.now() : Date.now();
 }
 
+// node_modules/@vue/devtools-api/lib/esm/index.js
+init_define_EXTERNAL_LINK_ICON_LOCALES();
+init_define_MZ_ZOOM_OPTIONS();
+
 // node_modules/@vue/devtools-api/lib/esm/env.js
+init_define_EXTERNAL_LINK_ICON_LOCALES();
+init_define_MZ_ZOOM_OPTIONS();
 function getDevtoolsGlobalHook() {
   return getTarget().__VUE_DEVTOOLS_GLOBAL_HOOK__;
 }
 function getTarget() {
-  return typeof navigator !== "undefined" && typeof window !== "undefined" ? window : typeof globalThis !== "undefined" ? globalThis : {};
+  return typeof navigator !== "undefined" && typeof window !== "undefined" ? window : typeof global !== "undefined" ? global : {};
 }
 var isProxyAvailable = typeof Proxy === "function";
 
 // node_modules/@vue/devtools-api/lib/esm/const.js
+init_define_EXTERNAL_LINK_ICON_LOCALES();
+init_define_MZ_ZOOM_OPTIONS();
 var HOOK_SETUP = "devtools-plugin:setup";
 var HOOK_PLUGIN_SETTINGS_SET = "plugin:settings:set";
 
 // node_modules/@vue/devtools-api/lib/esm/proxy.js
+init_define_EXTERNAL_LINK_ICON_LOCALES();
+init_define_MZ_ZOOM_OPTIONS();
 var ApiProxy = class {
   constructor(plugin, hook) {
     this.target = null;
@@ -134,6 +151,38 @@ var ApiProxy = class {
   }
 };
 
+// node_modules/@vue/devtools-api/lib/esm/api/index.js
+init_define_EXTERNAL_LINK_ICON_LOCALES();
+init_define_MZ_ZOOM_OPTIONS();
+
+// node_modules/@vue/devtools-api/lib/esm/api/api.js
+init_define_EXTERNAL_LINK_ICON_LOCALES();
+init_define_MZ_ZOOM_OPTIONS();
+
+// node_modules/@vue/devtools-api/lib/esm/api/app.js
+init_define_EXTERNAL_LINK_ICON_LOCALES();
+init_define_MZ_ZOOM_OPTIONS();
+
+// node_modules/@vue/devtools-api/lib/esm/api/component.js
+init_define_EXTERNAL_LINK_ICON_LOCALES();
+init_define_MZ_ZOOM_OPTIONS();
+
+// node_modules/@vue/devtools-api/lib/esm/api/context.js
+init_define_EXTERNAL_LINK_ICON_LOCALES();
+init_define_MZ_ZOOM_OPTIONS();
+
+// node_modules/@vue/devtools-api/lib/esm/api/hooks.js
+init_define_EXTERNAL_LINK_ICON_LOCALES();
+init_define_MZ_ZOOM_OPTIONS();
+
+// node_modules/@vue/devtools-api/lib/esm/api/util.js
+init_define_EXTERNAL_LINK_ICON_LOCALES();
+init_define_MZ_ZOOM_OPTIONS();
+
+// node_modules/@vue/devtools-api/lib/esm/plugin.js
+init_define_EXTERNAL_LINK_ICON_LOCALES();
+init_define_MZ_ZOOM_OPTIONS();
+
 // node_modules/@vue/devtools-api/lib/esm/index.js
 function setupDevtoolsPlugin(pluginDescriptor, setupFn) {
   const descriptor = pluginDescriptor;
@@ -160,4 +209,4 @@ export {
   now,
   setupDevtoolsPlugin
 };
-//# sourceMappingURL=chunk-RDOKOLLW.js.map
+//# sourceMappingURL=chunk-RTYX2NIH.js.map

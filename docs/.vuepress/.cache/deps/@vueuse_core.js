@@ -26,11 +26,28 @@ import {
   unref,
   watch,
   watchEffect
-} from "./chunk-BTS7FNWU.js";
-import "./chunk-54H5P76K.js";
-import "./chunk-2OZUEREY.js";
+} from "./chunk-FRZSQPYE.js";
+import "./chunk-YTZ7G7PT.js";
+import {
+  init_define_EXTERNAL_LINK_ICON_LOCALES,
+  init_define_MZ_ZOOM_OPTIONS
+} from "./chunk-MXMEVKDT.js";
+
+// dep:@vueuse_core
+init_define_EXTERNAL_LINK_ICON_LOCALES();
+init_define_MZ_ZOOM_OPTIONS();
+
+// node_modules/@vueuse/core/index.mjs
+init_define_EXTERNAL_LINK_ICON_LOCALES();
+init_define_MZ_ZOOM_OPTIONS();
+
+// node_modules/@vueuse/shared/index.mjs
+init_define_EXTERNAL_LINK_ICON_LOCALES();
+init_define_MZ_ZOOM_OPTIONS();
 
 // node_modules/vue-demi/lib/index.mjs
+init_define_EXTERNAL_LINK_ICON_LOCALES();
+init_define_MZ_ZOOM_OPTIONS();
 var isVue2 = false;
 var isVue3 = true;
 function set(target, key, val) {
@@ -2283,7 +2300,7 @@ function useClipboard(options = {}) {
     copy
   };
 }
-var _global = typeof globalThis !== "undefined" ? globalThis : typeof window !== "undefined" ? window : typeof globalThis !== "undefined" ? globalThis : typeof self !== "undefined" ? self : {};
+var _global = typeof globalThis !== "undefined" ? globalThis : typeof window !== "undefined" ? window : typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : {};
 var globalKey = "__vueuse_ssr_handlers__";
 _global[globalKey] = _global[globalKey] || {};
 var handlers = _global[globalKey];
