@@ -25,16 +25,16 @@ jobs:
       - uses: actions/checkout@v2
         with: 
           persist-credentials: false
-      - name: install nodejs
-        uses: actions/setup-node@v3.4.1
-        with: 
-          node-version: "14.x"
+      #- name: install nodejs
+       # uses: actions/setup-node@v3.4.1
+       # with: 
+        #  node-version: "14.x"
       # Install project dependencies
       - name: install rely
         run: npm install
       # package the project
       - name: build app
-        run: npm docs:build
+        run: npm run docs:build
       # deploy to GitHub Pages
       - name: deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
