@@ -9,7 +9,7 @@ export default defineUserConfig({
   title: 'Lrsoy',
   description: '这是我的第一个 VuePress 站点',
   base: "/docs-source-file/",
-  theme: defaultTheme({
+  theme: localTheme({
     logo: '/images/logoNavBook.png',
     logoDark: "/images/logoNavBookDark.png",
     navbar: [
