@@ -9,7 +9,7 @@ export default defineUserConfig({
   lang: 'zh-CN',
   title: 'Lrsoy',
   description: '这是我的第一个 VuePress 站点',
-  base: "/docs-source-file/",
+  base: "/docs-source-file/", // 文件访问路径地址
   theme: localTheme({
     logo: '/images/logoNavBook.png',
     logoDark: "/images/logoNavBookDark.png",
