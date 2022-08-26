@@ -11,12 +11,12 @@ actions:
     type: primary
 
 features:
-  - title: 简洁至上
-    details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
-  - title: Vue 驱动
-    details: 享受 Vue 的开发体验，可以在 Markdown 中使用 Vue 组件，又可以使用 Vue 来开发自定义主题。
-  - title: 高性能
-    details: VuePress 会为每个页面预渲染生成静态的 HTML，同时，每个页面被加载的时候，将作为 SPA 运行。
+  - title: 发布npm包
+    details: 从项目搭建到功能开发，将开发好的工具库、组件库等，发布到npm上，支持多种方式下载安装。
+  - title: Github Actions 与 Github Pages
+    details: 如何使用 GitHub Actions 自动发布一个应用到 GitHub Pages。
+  - title: VuePress2.x的使用
+    details: 记录配置 VuePress 的整个过程，遇到的问题以及重写部分组件。
 
 footer: <div ><p class="copyright" data-v-96344426="">本文档内容版权为 Lrsoy 贡献者所有，保留所有权利。</p></div>
 footerHtml: true
