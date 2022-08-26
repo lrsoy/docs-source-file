@@ -1,16 +1,5 @@
 <!-- CustomizeHomeFeatures 修改原 首页的底部列表组件-->
 
-<!-- <script setup>
-import { ref, defineEmits, defineProps, nextTick, reactive, onMounted, watch, computed, onUnmounted } from 'vue'
-</script>
-<template>
-  <div>创建组件</div>
-</template>
-
-<style  scoped>
-</style> -->
-
-
 <script setup lang="ts">
 import { usePageFrontmatter } from '@vuepress/client'
 import { isArray } from '@vuepress/shared'
@@ -24,6 +13,9 @@ const features = computed(() => {
   }
   return []
 })
+
+
+
 </script>
 
 <template>
