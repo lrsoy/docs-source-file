@@ -6,7 +6,7 @@ import { isArray } from '@vuepress/shared'
 import { computed, ref } from 'vue'
 import type { DefaultThemeHomePageFrontmatter } from '@vuepress/theme-default/lib/shared'
 import { useRouter } from 'vue-router'
-
+import { withBase } from '@vuepress/client'
 const router = useRouter()
 
 const imgs = ref([
@@ -45,7 +45,7 @@ const checkDetails = (route: string) => {
     >
       <article>
         <div class="entry-media">
-          <img :src="feature.url" />
+          <img :src="withBase(feature.url)" />
         </div>
         <div class="contents">
           <div class="avatar">
