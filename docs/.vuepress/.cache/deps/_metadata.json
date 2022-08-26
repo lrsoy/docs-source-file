@@ -1,6 +1,6 @@
 {
   "hash": "6d99c923",
-  "browserHash": "7e2643d0",
+  "browserHash": "50f7d92e",
   "optimized": {
     "@vue/devtools-api": {
       "src": "../../../../node_modules/@vue/devtools-api/lib/esm/index.js",
@@ -11,13 +11,13 @@
     "@vuepress/shared": {
       "src": "../../../../node_modules/@vuepress/shared/dist/index.js",
       "file": "@vuepress_shared.js",
-      "fileHash": "355e9c32",
+      "fileHash": "3e5c8463",
       "needsInterop": false
     },
     "@vueuse/core": {
       "src": "../../../../node_modules/@vueuse/core/index.mjs",
       "file": "@vueuse_core.js",
-      "fileHash": "b6040683",
+      "fileHash": "3fc61632",
       "needsInterop": false
     },
     "js-yaml": {
@@ -29,19 +29,25 @@
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "27063017",
+      "fileHash": "540c4e7a",
       "needsInterop": false
     },
     "vue-router": {
       "src": "../../../../node_modules/vue-router/dist/vue-router.esm-bundler.js",
       "file": "vue-router.js",
-      "fileHash": "4a5ac992",
+      "fileHash": "f2da6192",
       "needsInterop": false
     },
     "fs-extra": {
       "src": "../../../../node_modules/fs-extra/lib/index.js",
       "file": "fs-extra.js",
-      "fileHash": "fd0fde69",
+      "fileHash": "c3ebffd4",
+      "needsInterop": true
+    },
+    "@vuepress/utils": {
+      "src": "../../../../node_modules/@vuepress/utils/lib/index.js",
+      "file": "@vuepress_utils.js",
+      "fileHash": "cc5f65c5",
       "needsInterop": true
     }
   },
@@ -49,11 +55,14 @@
     "chunk-Q4WIAQQ4": {
       "file": "chunk-Q4WIAQQ4.js"
     },
-    "chunk-D7CWJ6GC": {
-      "file": "chunk-D7CWJ6GC.js"
+    "chunk-UCEQ6I56": {
+      "file": "chunk-UCEQ6I56.js"
     },
-    "chunk-OVWB2GLZ": {
-      "file": "chunk-OVWB2GLZ.js"
+    "chunk-S3GG3EQS": {
+      "file": "chunk-S3GG3EQS.js"
+    },
+    "chunk-JUM5HD4S": {
+      "file": "chunk-JUM5HD4S.js"
     },
     "chunk-X5H6CEJ3": {
       "file": "chunk-X5H6CEJ3.js"
