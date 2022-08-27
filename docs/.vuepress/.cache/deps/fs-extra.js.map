@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["dep:fs-extra"],
-  "sourcesContent": ["export default require(\"../../../../node_modules/fs-extra/lib/index.js\");"],
-  "mappings": ";;;;;;;;;AAAA;AAAA;AAAA,IAAO,mBAAQ;",
-  "names": []
-}

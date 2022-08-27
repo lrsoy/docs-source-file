@@ -2,6 +2,7 @@ import { defineUserConfig } from 'vuepress-vite'
 import { defaultTheme, } from '@vuepress/theme-default'
 import { path } from '@vuepress/utils'
 import { localTheme } from './theme'
+import { shikiPlugin } from '@vuepress/plugin-shiki'
 
 
 export default defineUserConfig({
@@ -12,9 +13,14 @@ export default defineUserConfig({
   theme: localTheme({
     logo: '/images/logoNavBook.png',
     logoDark: "/images/logoNavBookDark.png",
+    lastUpdated: true,
+    repo: 'https://github.com/lrsoy',
+    lastUpdatedText: "更新时间",
+    contributorsText: '贡献者',
+    editLink: false,
     navbar: [
       {
-        text: 'VuePress配置',
+        text: '指南',
         link: "/guide/index.md"
       },
       {
@@ -32,11 +38,6 @@ export default defineUserConfig({
       {
         text: 'Github Actions',
         link: "/github/index.md"
-      },
-      // my github
-      {
-        text: 'Github',
-        link: 'https://github.com/lrsoy',
       }
     ]
   }),
