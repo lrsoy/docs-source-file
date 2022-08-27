@@ -2,7 +2,6 @@ import { defineUserConfig } from 'vuepress-vite'
 import { defaultTheme, } from '@vuepress/theme-default'
 import { path } from '@vuepress/utils'
 import { localTheme } from './theme'
-import { shikiPlugin } from '@vuepress/plugin-shiki'
 
 
 export default defineUserConfig({
