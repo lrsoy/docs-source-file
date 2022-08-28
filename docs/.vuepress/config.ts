@@ -2,7 +2,10 @@ import { defineUserConfig } from 'vuepress-vite'
 import { defaultTheme, } from '@vuepress/theme-default'
 import { path } from '@vuepress/utils'
 import { localTheme } from './theme'
-
+import {
+  navbarZh,
+  sidebarZh
+} from './configs/index'
 
 export default defineUserConfig({
   lang: 'zh-CN',
@@ -17,28 +20,8 @@ export default defineUserConfig({
     lastUpdatedText: "更新时间",
     contributorsText: '贡献者',
     editLink: false,
-    navbar: [
-      {
-        text: '指南',
-        link: "/guide/index.md"
-      },
-      {
-        text: '前端',
-        link: "/web/index.md"
-      },
-      {
-        text: '材料',
-        link: "/material/index.md"
-      },
-      {
-        text: '其他',
-        link: "/other/index.md"
-      },
-      {
-        text: 'Github Actions',
-        link: "/github/index.md"
-      }
-    ]
+    navbar: navbarZh,
+    sidebar: sidebarZh,
   }),
   alias: {
     '@theme/HomeHero.vue': path.resolve(__dirname, './components/CustomizeHomeHero.vue'),
