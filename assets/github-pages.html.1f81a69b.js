@@ -1,0 +1,1 @@
+import{_ as a,o as t,c as s,a as e,b as r}from"./app.4c47a311.js";const c={},o=e("h1",{id:"github-pages",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#github-pages","aria-hidden":"true"},"#"),r(" github pages")],-1),i=[o];function _(h,n){return t(),s("div",null,i)}var u=a(c,[["render",_],["__file","github-pages.html.vue"]]);export{u as default};

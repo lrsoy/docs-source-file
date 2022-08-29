@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-322d0321","path":"/web/typescript/enmu-as.html","title":"\u679A\u4E3E\u4E0E\u65AD\u8A00","lang":"zh-CN","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1661695165000,"contributors":[{"name":"lrsoy","email":"lying_jk_bp@163.com","commits":1}]},"filePathRelative":"web/typescript/enmu-as.md"}');export{e as data};

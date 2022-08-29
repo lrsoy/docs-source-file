@@ -1,1 +1,0 @@
-import{_ as r,o as c,c as a,a as e,b as s}from"./app.35e31fdb.js";const t={},n=e("h1",{id:"\u6CDB\u578B-generics",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#\u6CDB\u578B-generics","aria-hidden":"true"},"#"),s(" \u6CDB\u578B generics")],-1),o=[n];function i(_,d){return c(),a("div",null,o)}var l=r(t,[["render",i],["__file","generics.html.vue"]]);export{l as default};
