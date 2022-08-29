@@ -39,6 +39,12 @@ export const navbarZh: NavbarConfig = [
           { text: 'Github Pages', link: '/github/github-pages.md' },
         ]
       },
+      {
+        text: '单元测试',
+        children: [
+          { text: 'vitest', link: '/web/test/vitest.md' },
+        ]
+      },
     ]
   },
   {

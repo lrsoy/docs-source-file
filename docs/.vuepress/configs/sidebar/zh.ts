@@ -22,6 +22,9 @@ export const sidebarZh: SidebarConfig = {
   '/web/react': [
     '/web/react/README.md',
   ],
+  '/web/test': [
+    '/web/test/vitest.md',
+  ],
   '/web/vue': [
     '/web/vue/README.md',
   ],
