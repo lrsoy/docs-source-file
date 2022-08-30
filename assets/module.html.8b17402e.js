@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-2b62c392","path":"/web/typescript/module.html","title":"\u547D\u540D\u7A7A\u95F4\u4E0E\u6A21\u5757","lang":"zh-CN","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1661786119000,"contributors":[{"name":"lrsoy","email":"lying_jk_bp@163.com","commits":1}]},"filePathRelative":"web/typescript/module.md"}');export{e as data};
