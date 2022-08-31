@@ -1,12 +1,28 @@
 # 发布npm包
 
-## 关于
+## :sparkles: 关于
 
-## 初始化
+## :broom: 初始化
 初始化一个最基本的项目，选用经常使用的工具即可，**yarn**，**pnpm**，**npm**等等
 ```js
 npm init -y || yarn init // 直接完成，跳过配置
 ```
+
+开发目录结构(工具类)  
+[.gitignore自定义生成什么样的忽略文件](https://www.toptal.com/developers/gitignore)
+```lua
+hello-npm
+|-- dist/（ 存放打包后的文件,无需设置，通过打包生成 ）
+|-- src/（ 源码 ）
+|-- test/ ( 测试文件 )
+|-- package.json
+|-- build.config.ts ( unbuild打包配置文件 )
+|-- .npmrc ( 配置npm源 )
+|-- .gitignore ( 忽略文件配置 )
+|-- README.md
+|-- tsconfig.json (如果可以，推荐使用ts进行包的开发，如不需要ts则无需此配置文件)
+```
+## :open_file_folder: 配置文件
 * 基本配置文件结构 **package.json**
 ```json{2-7,9-14}
 {
@@ -32,30 +48,41 @@ npm init -y || yarn init // 直接完成，跳过配置
 }
 
 ```
-* 目录结构  
-[.gitignore自定义生成什么样的忽略文件](https://www.toptal.com/developers/gitignore)
-```lua
-hello-npm
-|-- dist/（ 存放打包后的文件,无需设置，通过打包生成 ）
-|-- src/（ 源码 ）
-|-- test/ ( 测试文件 )
-|-- package.json
-|-- build.config.ts ( unbuild打包配置文件 )
-|-- .npmrc ( 配置npm源 )
-|-- .gitignore ( 忽略文件配置 )
-|-- README.md
-|-- tsconfig.json (如果可以，推荐使用ts进行包的开发，如不需要ts则无需此配置文件)
+
+* 项目依赖
+```json
+{
+  "devDependencies": { // 表示开发环境下的依赖管理，--save-dev 简写 -D
+  },
+  "dependencies": { // 表示生产环境下的依赖管理，--save 简写 -S
+  }
+}
 ```
+* **files** 字段，开发完成的包，不希望将源码都一并提交到**npm** 上，可以在files字段里面设置，哪一些文件可以被发布到npm上，也可以通过配置 **.npmignore** 文件配置什么文件可以被上传，如果同时设置，**files**字段会优先于配置文件。
+```json
+{  
+  "files": [
+    "dist"
+  ]
+}
+```
+## :package: 打包
+开发完成的工具包，需要进行打包，选择打包工具，rollup与webpack，使用[rollup](https://rollupjs.org/guide/en/)打包，如果足够熟悉rollup打包，可以通过自定义配置进行打包，不想配置特别多的打包配置，可以选择使用**unbuild** 打包。  
+* **unbuild**介绍
 
-## 配置文件
+* 安装
+```
+pnpm add unbuild -D
+```
+* 配置**unbuild**
 
-## Degit工具 
 
-## 支持多种方式下载
+## :safety_pin: 版本号
 
-## 打包选择
+## :hammer_and_wrench: Degit工具 
 
-## 账号登录 :writing_hand:
+
+## :writing_hand: 账号登录 
 
 要想发布自己开发好的包，最重要的就是需要注册一个npm的账号。  
 [npm](https://www.npmjs.com/signup)。  
@@ -94,4 +121,8 @@ npm who am i
 5. 将开发完成的包推送到npm服务器上
 ```js
 npm publish
+```
+6. 模拟打包，生成本地的包，可以查看包里面的内容，完成后，本地会出现tgz的压缩包，就是要上传到npm上的内容
+```js
+npm pack
 ```
