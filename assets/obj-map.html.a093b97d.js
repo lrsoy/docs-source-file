@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-31138bee","path":"/web/typescript/obj-map.html","title":"\u5BF9\u8C61\u4E0EMap\u5BF9\u8C61","lang":"zh-CN","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1661872335000,"contributors":[{"name":"lrsoy","email":"lying_jk_bp@163.com","commits":1}]},"filePathRelative":"web/typescript/obj-map.md"}');export{e as data};
