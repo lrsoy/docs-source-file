@@ -24,6 +24,8 @@ hello-npm
 ```
 ## :open_file_folder: 配置文件
 * 基本配置文件结构 **package.json**
+* [package.json](http://nodejs.cn/learn/the-package-json-guide) 其他选项
+
 ```json{2-7,9-14}
 {
   "name": "npm-cs", // 包的名称
@@ -68,14 +70,80 @@ hello-npm
 ```
 ## :package: 打包
 开发完成的工具包，需要进行打包，选择打包工具，rollup与webpack，使用[rollup](https://rollupjs.org/guide/en/)打包，如果足够熟悉rollup打包，可以通过自定义配置进行打包，不想配置特别多的打包配置，可以选择使用**unbuild** 打包。  
-* **unbuild**介绍
-
+* [unbuild](https://github.com/unjs/unbuild)介绍
+* 关于[typesVersions](https://www.typescriptlang.org/docs/handbook/declaration-files/publishing.html) 
 * 安装
 ```
 pnpm add unbuild -D
 ```
 * 配置**unbuild**
+```ts
+// create src/index.ts
+export const log = (...args) => { console.log(...args) }
+```
+```json{2-16}
+// package.json  unbuild在packages中的配置
+{
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*",
+        "./dist/index.d.ts"
+      ]
+    }
+  }
+}
+```
 
+* **unbuild** 的配置文件`build.config.ts`
+```ts
+import { defineBuildConfig } from 'unbuild'
+
+export default defineBuildConfig({
+  entries: [
+    'src/index', // 打包入口文件
+  ],
+  declaration: true, // 生成 .d.ts 声明文件
+  clean: true,
+  rollup: {
+    emitCJS: true,
+  },
+})
+
+```
+
+* 运行脚本的配置**scripts**  
+
+```json{4}
+{
+  "scripts": {
+    "build": "unbuild", // 打包
+    "dev": "unbuild --stub", // 暂时不解，正在寻找答案
+    "lint": "eslint .",
+    // prepublishOnly 如果不执行build 
+    // 直接使用npm publish 该字段命令会优先与npm publish执行
+    "prepublishOnly": "nr build",
+    "release": "bumpp && npm publish",
+    "start": "esno src/index.ts",
+    "test": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+}
+```
 
 ## :safety_pin: 版本号
 
