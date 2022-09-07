@@ -1,0 +1,1 @@
+import{_ as r,o as a,c as t,a as e,b as n}from"./app.62bb28bc.js";const c={},o=e("h1",{id:"nrm",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#nrm","aria-hidden":"true"},"#"),n(" nrm")],-1),s=[o];function _(d,i){return a(),t("div",null,s)}var h=r(c,[["render",_],["__file","nrm.html.vue"]]);export{h as default};

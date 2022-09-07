@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-a7292c14","path":"/web/typescript/","title":"TypeScript","lang":"zh-CN","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1662563652000,"contributors":[{"name":"Liu Ying","email":"69709362+lrsoy@users.noreply.github.com","commits":1}]},"filePathRelative":"web/typescript/README.md"}');export{e as data};
