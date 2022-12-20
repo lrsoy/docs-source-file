@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-faf858e4","path":"/tool/nrm.html","title":"nrm","lang":"zh-CN","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1671517269000,"contributors":[{"name":"Liu Ying","email":"69709362+lrsoy@users.noreply.github.com","commits":1}]},"filePathRelative":"tool/nrm.md"}');export{t as data};

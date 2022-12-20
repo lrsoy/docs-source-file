@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-552792a7","path":"/web/typescript/generics.html","title":"\u6CDB\u578B generics","lang":"zh-CN","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1671517269000,"contributors":[{"name":"Liu Ying","email":"69709362+lrsoy@users.noreply.github.com","commits":1}]},"filePathRelative":"web/typescript/generics.md"}');export{e as data};
