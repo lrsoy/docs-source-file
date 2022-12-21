@@ -1,1 +1,0 @@
-const t=JSON.parse('{"key":"v-6ba012c2","path":"/home/github.html","title":"Github Actions \u4E0E Github Pages","lang":"zh-CN","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1671517269000,"contributors":[{"name":"Liu Ying","email":"69709362+lrsoy@users.noreply.github.com","commits":1}]},"filePathRelative":"home/github.md"}');export{t as data};

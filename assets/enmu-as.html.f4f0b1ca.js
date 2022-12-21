@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-322d0321","path":"/web/typescript/enmu-as.html","title":"\u679A\u4E3E\u4E0E\u65AD\u8A00","lang":"zh-CN","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1671608811000,"contributors":[{"name":"Liu Ying","email":"69709362+lrsoy@users.noreply.github.com","commits":1}]},"filePathRelative":"web/typescript/enmu-as.md"}');export{e as data};

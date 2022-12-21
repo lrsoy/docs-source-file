@@ -1,0 +1,1 @@
+import{_ as a,o as r,c as t,a as e,b as n}from"./app.13a5bc03.js";const c={},o=e("h1",{id:"yarn",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#yarn","aria-hidden":"true"},"#"),n(" yarn")],-1),s=[o];function _(d,i){return r(),t("div",null,s)}var l=a(c,[["render",_],["__file","yarn.html.vue"]]);export{l as default};
